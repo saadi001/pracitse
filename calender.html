@@ -9,13 +9,14 @@
         .calender{
             display: grid;
             grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: 35px repeat(5, 80px);
             row-gap: 20px;
             column-gap: 10px;
             
         }
-        .date{
+        .date ,.day{
             background-color: lightblue;
-            height: 100px;
+            
             font-size: 2em;
             display: flex;
             justify-content: center;
@@ -26,10 +27,20 @@
         .other-month{
             background-color: lightgrey;
         }
+        .day{
+            font-size: 1.5em;
+        }
     </style>
 </head>
 <body>
     <div class="calender">
+        <div class="day">S</div>
+        <div class="day">M</div>
+        <div class="day">T</div>
+        <div class="day">W</div>
+        <div class="day">T</div>
+        <div class="day">F</div>
+        <div class="day">S</div>
         <div class="date other-month">30</div>
         <div class="date other-month">31</div>
         <div class="date">1</div>
